@@ -26,7 +26,7 @@ operations = {
 while True:
     # Define your expression (user input works too)
     expression = input("\nInput expression here please : ")
-    if expression.lower() in ['exit', 'keluar']:
+    if expression.lower() in ['exit']:
         print("Exiting the program. Goodbye!")
         time.sleep(1)
         break
