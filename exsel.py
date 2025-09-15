@@ -1,8 +1,6 @@
 import ttg
 import time
 
-# Exsel and Rasya
-
 variables = []
 
 # Truth table operations and the ttg variant
@@ -11,19 +9,15 @@ operations = {
     "&": " and ",
     "&&": " and ",
     "^": " and ",
-    "and": " and ",
     "|": " or ",
     "||": " or ",
-    "v": " or ",
     "∨": " or ",
-    "or": " or ",
     "~": " not ",
     "¬": " not ",
     "!": " not ",
     "->": " implies ",
     "=>": " implies ",
     "⇒": " implies ",
-    "implies": " implies ",
     "<->": " = ",
     "<=>": " = ",
     "⇔": " = "
@@ -34,7 +28,7 @@ while True:
     expression = input("\nInput expression here please : ")
     if expression.lower() in ['exit', 'keluar']:
         print("Exiting the program. Goodbye!")
-        time.sleep(3)
+        time.sleep(1)
         break
 
     # Add all alphabetical variables
@@ -132,3 +126,6 @@ while True:
 
     # Print the table
     print(table)
+
+    # Clear variables for next iteration
+    variables.clear()
