@@ -1,6 +1,8 @@
 import ttg
 import time
 
+# Code originally made by Exsel with his implementation of reverse implication handling. Modified to add
+# user input accessibility and exit functionality.
 variables = []
 
 # Truth table operations and the ttg variant
